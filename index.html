@@ -41,43 +41,36 @@
             <h2>Top Products</h2>
             <div class="products-grid">
                 <div class="product-item">
-                    <img src="images/card.png" alt="Product 1">
+                    <img src="images/cesar.png" alt="Whole Grain Bread">
+                    <div class="product-details">
+                        <h3>$40</h3></div>
+                        <div class="det">
+                        <p>Whole Grain Bread</p>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    
+                </div>
+                <div class="product-item">
+                    <img src="images/product1.png" alt="Whole Grain Bread">
                     <div class="product-details">
                         <h3>$40</h3>
                         <p>Whole Grain Bread</p>
-                        <div class="product-buttons">
-                            <button class="info-btn"><i class="fas fa-info"></i></button>
-                            <button class="btn add-btn">Add</button>
-                        </div>
+                        <button class="add-btn">Add</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="images/product1.png" alt="Whole Grain Bread">
+                    <div class="product-details">
+                        <h3>$40</h3>
+                        <p>Whole Grain Bread</p>
+                        <button class="add-btn">Add</button>
                     </div>
                 </div>
         
-                <div class="product-item">
-                    <img src="images/card.png" alt="Product 2">
-                    <div class="product-details">
-                        <h3>$40</h3>
-                        <p>Whole Grain Bread</p>
-                        <div class="product-buttons">
-                            <button class="info-btn"><i class="fas fa-info"></i></button>
-                            <button class="btn add-btn">Add</button>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-item">
-                    <img src="images/card.png" alt="Product 3">
-                    <div class="product-details">
-                        <h3>$40</h3>
-                        <p>Whole Grain Bread</p>
-                        <div class="product-buttons">
-                            <button class="info-btn"><i class="fas fa-info"></i></button>
-                            <button class="btn add-btn">Add</button>
-                        </div>
-                    </div>
-                </div>
-               
+                <!-- Add more products similarly -->
             </div>
     </section>
+   
     <footer class="footer">
        
             <div class="ff">
@@ -118,14 +111,14 @@
                 <div class="news-item">
                     <img src="images/foot-img1.png" alt="News Image">
                     <div class="news-content">
-                        <p>June 14, 2024</p>
+                        <p style="color: #E9BD8C;">June 14, 2024</p>
                         <p>Puff pastry bliss.</p>
                     </div>
                 </div>
                 <div class="news-item">
                     <img src="images/foot-img2.png" alt="News Image">
                     <div class="news-content">
-                        <p>June 14, 2024</p>
+                        <p style="color: #E9BD8C;">June 14, 2024</p>
                         <p>Puff pastry bliss.</p>
                     </div>
                 </div>
@@ -138,4 +131,18 @@
     </footer>
     
 </body>
+<script>
+    // Scroll event listener to detect when to change the navbar background
+    window.addEventListener("scroll", function() {
+        var navbar = document.querySelector(".navbar");
+        var header = document.querySelector("header");
+        var headerHeight = header.offsetHeight;
+
+        if (window.pageYOffset > headerHeight) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
 </html>
