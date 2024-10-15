@@ -1,0 +1,338 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styling */
+header {
+    background: url('images/rec.png') no-repeat center center/cover;
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+}
+h1,h2{
+    font-family: "Sansita Swashed", system-ui;
+
+
+}
+
+.navbar {
+    width: 100%;
+    display: flex; 
+    position: fixed;
+    justify-content: space-around;
+    margin-top: 10px;;
+}
+.navbar button{
+    margin-top: 10px;
+}
+button {
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+	transition: ease .40s;
+    background-color: #933C24;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+}
+button i {
+    color:  black;
+}
+button:hover {
+
+    background-color: #72210b;
+
+}
+
+.logo img {
+    width: 70px; /* Adjust logo size */
+    display: flex;
+    justify-content: right;
+ 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+align-items: center;}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+.active{
+    color: #E9BD8C;
+}
+.nav-links a:hover {
+    color: #E9BD8C; /* Hover effect on links */
+}
+header .section{
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    font-size: 35px;
+
+   
+
+}
+header .section h1 {
+    font-family: "Sansita Swashed", system-ui;
+
+}
+header .section p {
+    font-size: 20px;
+    color: #E9BD8C;
+}
+.section button {
+    font-size: 24px;
+    width: 200px;
+    height: 70px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+
+}
+.product h2 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 125px;
+    margin-bottom: 125px;}
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .product-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+        position: relative;
+    }
+    
+    .product-item:hover {
+        transform: translateY(-10px);
+    }
+    
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .product-details {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-details h3 {
+        color: #933C24;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    
+    .product-details p {
+        color: #555;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    
+    /* Button container */
+    .product-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .product-buttons .btn.add-btn {
+        background-color: #933C24;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .product-buttons .btn.add-btn:hover {
+        background-color: #b74d35;
+    }
+    
+    .product-buttons .info-btn {
+        background-color: transparent;
+        border: 1px solid #933C24;
+        color: #933C24;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .product-buttons .info-btn:hover {
+        background-color: #933C24;
+        color: white;
+    }
+    /* Footer */
+.footer {
+    background-image: url('images/foot.jpg');
+    background-size: cover;
+    padding: 40px 0;
+    color: white;
+    height: 500px;
+}
+.ff {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+    align-items: start;
+    text-align: left;
+    margin-top: 70px;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-left:     50px;
+}
+
+.footer-about, .footer-explore, .footer-news {
+    max-width: 220px;
+}
+
+.footer h3 {
+    color: #EAB585; /* Light beige/gold color */
+    margin-bottom: 15px;
+}
+
+.footer p, .footer a {
+   
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-explore ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-explore ul li {
+    margin-bottom: 8px;
+}
+
+.footer-explore ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-explore ul li a:hover {
+    color: #EAB585;
+}
+
+.footer-news .news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-news .news-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-news .news-content p {
+    margin: 0;
+}
+.footer-social{
+    display: flex;
+justify-content: space-between;
+margin-right: 40px;
+margin-top: 30px;
+font-size: 24px;
+color: #E9BD8D;
+
+
+}
+.footer-social h4 {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: #EAB585;
+    margin-right: 15px;
+    font-size: 38px;
+}
+
+.footer-social a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(115, 115, 115, 0.7);
+    font-size: 14px;
+}
+.footer-line {
+    border: none; /* Removes default styling */
+    height: 2px;  /* Line thickness */
+    background-color: rgba(234, 181, 133, 0.3);  /* Line color with opacity */
+    margin: 20px auto;  /* Adjust spacing above and below the line */
+    width: 80%;  /* Line width (adjust as needed) */
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
