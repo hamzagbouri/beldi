@@ -134,13 +134,14 @@ header .section p {
     .products-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
         padding: 0 30px;
         justify-content: center;
         margin-left: 100px;
     }
     
     .product-item {
+        margin-top: 25px    ;
+        width: 360px;
         background-image: url('images/card.png');
         background-size: cover;
         background-position: center;
@@ -184,6 +185,12 @@ header .section p {
         justify-content: space-between;
         align-items: center;
     }
+    .product-item h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 300;
+        float: left;
+        margin-bottom: -20px;
+    }
     .add-btn {
         padding: 10px 15px;
         border: none;
@@ -200,15 +207,50 @@ header .section p {
     .add-btn:hover {
         background-color: #e64a19;
     }
-    .about-us h2{
-        font-size: 50px;
+    .about-us {
+        background-image: url('images/background_about.png'); /* Use your background image path */
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        text-align: center;
+        color: white;
+        height: 454px;
+        margin-bottom: 80px;
+    }
+    .about-us p {
+        color: #B9B9B9;
+        font-family: 'Inter', sans-serif;
+        width: 250px;
+    }
+    
+    .about-us-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-us h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    
+    .about-us p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+   .feat h2{
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;    
     margin-top: 125px;
-    margin-bottom: 125px
-    }
-   
+    margin-bottom: 125px;
+   }
     /* Footer */
 .footer {
     background-image: url('images/foot.jpg');
