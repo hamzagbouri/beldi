@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -143,7 +144,7 @@ header .section p {
     height: 1px;
     background-color: #E0E0E0; 
     position: absolute;
-    bottom: 396px; 
+    bottom: 395px; 
     left: 10%; 
 }
 
@@ -164,12 +165,11 @@ header .section p {
     content: "";
     display: block;
     width: 0;
-    height: 4px; /* Hauteur du soulignement */
-    background-color: #A23D24; /* Couleur marron pour l'élément sélectionné */
+    height: 4px; 
+    background-color: #A23D24; 
     transition: width 0.3s ease;
     position: absolute;
     border-radius: 10px;
-    /* bottom: -2px;  */
     left: 0;
     right: 0;
     margin: auto;
@@ -177,14 +177,182 @@ header .section p {
 
 .menu-submenu ul li a:hover::after {
     width: 60px;
+}
+
+.menu-submenu ul li a.active::after {
+    width: 60px; 
+}
+.about-beldi{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 80px;
+    justify-content: space-around   ;
+}
+.about-text {
+    margin-top: 30px;
+}
+
+.about-text .txt{
+    background-image: url('images/card.png');
+    width: 577px;
+    height: 421px;
+    color: white;
+    background-size: cover;
+    border-radius: 20px;
+    font-weight: 400;
+    margin-right: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.about-text p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.te{
+    margin-top: 30px;
+}
+
+.about-textt .txt{
+    background-image: url('images/card.png');
+    width: 577px;
+    height: 421px;
+    color: white;
+    background-size: cover;
+    border-radius: 20px;
+    font-weight: 400;
+    margin-right: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.about-textt p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.contact-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    border-radius: 25px;
+
+}
+.contact-info .email-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+}
+.contact-info .ph {
+
+    font-weight: bold;
+}
+.contact-info .ab {
+    color: #DD5471;
+}
+.contactt{
+    margin: 100px;
+}
+.form-container {
+    width: 80%;
+    background-color: #e0e0e0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+   
+}
+.forma{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin-top: -100px;
+}
+.form-container h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+ 
+}
+
+.form-container span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #888;
+    background-color: #e0e0e0;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #A23D24;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: -45px;
+    gap: 20px;
     
 }
-.menu-submenu ul li .active {
-   
-    background-color: #A23D24;
-    width: 0;
-    height: 4px;
-    
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+  
+
+
+
+.image-container {
+    width: 50%;
+    background-color: #000;
+    border-radius: 25px;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .product{
     margin-bottom: 35px;
@@ -373,7 +541,11 @@ header .section p {
 .footer a:hover {
     text-decoration: underline;
 }
-.footer-explore h3,p{
+.footer-explore h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semi-bold */
+}
+.footer-explore p{
     font-family: 'Poppins', sans-serif;
     font-weight: 600; /* Semi-bold */
 }
