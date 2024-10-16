@@ -25,6 +25,13 @@ h1,h2{
 
 
 }
+.menu-page .navbar.with-bg {
+    background-image: url('images/rec.png'); /* Remplace 'your-image.jpg' par ton image de fond */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+top: 0;
+}
 
 .navbar {
     width: 100%;
@@ -86,7 +93,7 @@ align-items: center;}
     font-weight: bold;
     font-size: 18px;
 }
-.active{
+.nav-links .active{
     color: #E9BD8C;
 }
 .nav-links a:hover {
@@ -119,6 +126,65 @@ header .section p {
     font-weight: 600;
     font-family: 'Inter', sans-serif;
 
+}
+.menu-submenu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    position: relative;
+}
+
+.menu-submenu::after {
+    content: "";
+    display: block;
+    width: 80%; 
+    height: 1px;
+    background-color: #E0E0E0; 
+    position: absolute;
+    bottom: 396px; 
+    left: 10%; 
+}
+
+.menu-submenu ul li {
+    margin: 0 15px;
+}
+
+.menu-submenu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.menu-submenu ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px; /* Hauteur du soulignement */
+    background-color: #A23D24; /* Couleur marron pour l'élément sélectionné */
+    transition: width 0.3s ease;
+    position: absolute;
+    border-radius: 10px;
+    /* bottom: -2px;  */
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.menu-submenu ul li a:hover::after {
+    width: 60px;
+    
+}
+.menu-submenu ul li .active {
+   
+    background-color: #A23D24;
+    width: 0;
+    height: 4px;
+    
 }
 .product{
     margin-bottom: 35px;
@@ -251,6 +317,16 @@ header .section p {
     margin-top: 125px;
     margin-bottom: 125px;
    }
+   .feat .feat-img {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 100px;
+
+   }
+   .feat p {
+    margin-left: 90px;
+    font-size: 32px;
+   }
     /* Footer */
 .footer {
     background-image: url('images/foot.jpg');
@@ -373,6 +449,7 @@ color: #E9BD8D;
     margin: 20px auto; 
     width: 80%;  
 }
+
 /* Responsive Styling */
 @media (max-width: 768px) {
     .navbar {
