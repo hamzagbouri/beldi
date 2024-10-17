@@ -179,9 +179,7 @@ header .section p {
     width: 60px;
 }
 
-.menu-submenu ul li a.active::after {
-    width: 60px; 
-}
+
 .about-beldi{
     display: flex;
     flex-direction: row-reverse;
@@ -356,8 +354,18 @@ form button {
 }
 .product{
     margin-bottom: 35px;
+    display: none;
 }
-.product h2 {
+.product:target {
+    display: block;
+}
+
+.product:first-of-type {
+    display: block;
+  
+}
+
+.menuu h2 {
     font-size: 50px;
     display: flex;
     justify-content: center;
